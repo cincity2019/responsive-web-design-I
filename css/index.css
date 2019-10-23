@@ -1,3 +1,116 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+* {
+	box-sizing: border-box;
+}
 
+.menubar nav {
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.menubar nav a {
+	margin: 0 20px;
+	color: black;
+}
+.main-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px;
+}
+.middle-img {
+	width: 100%;
+}
+.content1 {
+	font-size: 30px;
+	text-align: center;
+}
+button {
+	margin: 15px;
+	font-size: 20px;
+}
+.round-content {
+	display: flex;
+	flex-flow: row;
+	padding: 5px;
+}
+
+.bottom-content {
+	display: flex;
+	flex-flow: row;
+}
+
+.last-footer {
+	text-align: center;
+	font-size: 15px;
+}
+
+@media (max-width: 500px) {
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		width: 48%;
+	}
+	nav {
+		padding-top: 80px;
+		flex-direction: column-reverse;
+		font-size: 15px;
+	}
+	.main-header {
+		justify-content: center;
+		width: 48%;
+	}
+
+	.menubar a {
+		border-bottom: 1px black;
+		border-bottom-width: 40px;
+		font-size: 20px;
+	}
+
+	.content1 {
+		padding-top: 60px;
+		padding-bottom: 40px;
+		font-size: 30px;
+	}
+
+	button {
+		border: 1px solid black;
+		font-size: 15px;
+	}
+
+	.action {
+		display: none;
+	}
+	.middle-img {
+		width: 48%;
+	}
+	.round-content {
+		display: flex;
+		flex-wrap: wrap;
+		width: 48%;
+		font-size: 15px;
+	}
+
+	.bottom-content {
+		display: flex;
+		flex-wrap: wrap;
+		width: 48%;
+		font-size: 15px;
+	}
+
+	.info {
+		font-size: 15px;
+		margin: 5px;
+	}
+	.last-footer {
+		font-size: 15px;
+		width: 48%;
+	}
+}
